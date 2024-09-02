@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js -->
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#daily">Daily Assistance</a></li>
+            <li><a href="#analytics">General Analytics</a></li>
+            <li><a href="#individual">Individual Analytics</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Attendance Dashboard</h1>
+        <form id="date-range-form">
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+            
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+
+            <button type="submit">Get Data</button>
+        </form>
+
+        <canvas id="attendanceChart" width="400" height="200"></canvas>
+    </div>
+
+    <script src="scripts.js"></script> <!-- Link to JS file -->
+</body>
+</html>
